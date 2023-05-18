@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnfinishedNotesBadge should match snapshot 1`] = `
+<div
+  className="unfinishedNotesBadgestyled__StyledUnfinishedNotesBadge-sc-1qz2wjb-0 fCSfbt"
+>
+  <p
+    className="textstyled__StyledText-sc-1vedkxi-0 klBkWb"
+    color="white"
+    cursor="default"
+    onClick={[Function]}
+    size="xs"
+  >
+    42
+  </p>
+</div>
+`;

@@ -1,0 +1,10 @@
+export { default as handleSpeechEnd } from "./handleSpeechEnd";
+export { default as handleSpeechStart } from "./handleSpeechStart";
+export { default as handleUserRequest } from "./handleUserRequest";
+export { default as handleSpeechConfig } from "./handleSpeechConfig";
+export { default as handleChangeSection } from "./handleChangeSection";
+export { default as handleCursorPosition } from "./handleCursorPosition";
+export { default as handleSpeechTransfer } from "./handleSpeechTransfer";
+export { default as handleGetComposition } from "./handleGetComposition";
+export { default as handleAgentStateUpdate } from "./handleAgentStateUpdate";
+export { default as handleSubmitComposition } from "./handleSubmitComposition";

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sticky Header should match snapshot 1`] = `
+<div
+  className="stickyHeaderstyled__StyledHeader-sc-18p1m5g-0 fJhTFR"
+>
+  <p
+    className="textstyled__StyledText-sc-1vedkxi-0 gQoCmW"
+    color="inherit"
+    cursor="default"
+    onClick={[Function]}
+    size="md"
+  >
+    Personal
+  </p>
+</div>
+`;

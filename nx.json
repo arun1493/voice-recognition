@@ -1,0 +1,78 @@
+{
+  "npmScope": "suki-web",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e", "build-storybook"]
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "admin-admin": {
+      "tags": []
+    },
+    "admin-admin-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin-admin"]
+    },
+    "physician-physician": {
+      "tags": []
+    },
+    "physician-physician-e2e": {
+      "tags": [],
+      "implicitDependencies": ["physician-physician"]
+    },
+    "suki-business": {
+      "tags": []
+    },
+    "suki-editor": {
+      "tags": []
+    },
+    "suki-ui": {
+      "tags": []
+    },
+    "suki-ui-e2e": {
+      "tags": [],
+      "implicitDependencies": ["suki-ui"]
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "physician-physician"
+}

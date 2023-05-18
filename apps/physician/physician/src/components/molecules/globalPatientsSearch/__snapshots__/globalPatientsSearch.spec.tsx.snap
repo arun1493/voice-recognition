@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlobalPatientsSearch should match snapshot 1`] = `
+<div
+  className="globalPatientsSearchstyled__StyledPatientsSearch-nftnqf-0 eIhoVw"
+>
+  <div
+    className="globalPatientsSearchstyled__StyledSearchContainer-nftnqf-1 BuUsd"
+  >
+    <div
+      className="globalPatientsSearchstyled__StyledSearchIcon-nftnqf-3 tfHfz"
+    >
+      <i
+        className="SukiIcon__StyledIcon-q9b9ar-0 hViFDz sukiIcon "
+        color="secondary"
+        size="md"
+      >
+        <svg
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.842 3.043a6.191 6.191 0 0 0-2.022.548c-1.972.898-3.326 2.651-3.73 4.829-.092.495-.092 1.665 0 2.16.514 2.771 2.559 4.816 5.33 5.33.495.092 1.665.092 2.16 0 2.771-.514 4.816-2.559 5.33-5.33.092-.495.092-1.665 0-2.16-.451-2.433-2.09-4.326-4.41-5.095a6.485 6.485 0 0 0-2.658-.282m1.218 2.001a4.52 4.52 0 0 1 3.48 2.493c.721 1.489.559 3.304-.411 4.606-.582.782-1.313 1.319-2.2 1.616a4.4 4.4 0 0 1-2.858 0c-1.981-.664-3.253-2.632-3.038-4.699a4.484 4.484 0 0 1 5.027-4.016m3.86 10.471c-.3.098-.554.326-.671.602-.076.181-.075.542.002.729.065.154 2.931 4.263 3.099 4.442.252.269.742.359 1.096.202.217-.096.423-.298.519-.509.09-.197.097-.57.016-.765-.069-.165-2.893-4.212-3.077-4.41a1.26 1.26 0 0 0-.281-.214c-.172-.088-.544-.129-.703-.077"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </i>
+    </div>
+    <div
+      className="formInputstyled__StyledInputContainer-p3pq9x-0 jOohTQ"
+    >
+      <input
+        className="formInputstyled__StyledFormInput-p3pq9x-1 ckqHZa globalPatientsSearchstyled__StyledSearchInput-nftnqf-2 daWdeC"
+        data-cy="form-input"
+        data-testid="input"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Enter Patient Name"
+        type="text"
+      />
+    </div>
+  </div>
+  <ul
+    className="globalPatientsSearchstyled__StyledPatientsListDropDown-nftnqf-4 bfwyNs"
+    data-cy="patients-list-dropdown"
+  >
+    <li
+      className="sukiListItemstyled__StyledSukiListItem-lvcifx-0 duNFrf"
+      data-testid="listItem"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="sukiListItemstyled__StyledSukiTitleAreaWrapper-lvcifx-1 lokoIV"
+        onClick={[Function]}
+      >
+        <div
+          className="sukiListItemTitlestyled__StyledSukiListItemTitle-sc-1om802d-0 kinFhQ"
+        >
+          TestB TestC
+        </div>
+        <div
+          className="sukiListItemSubtitlestyled__StyledSukiListItemSubtitle-sc-1txtyeo-0 fREnXW"
+        >
+          5 months • F • MRN ,865
+        </div>
+      </div>
+    </li>
+    <li
+      className="sukiListItemstyled__StyledSukiListItem-lvcifx-0 duNFrf"
+      data-testid="listItem"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="sukiListItemstyled__StyledSukiTitleAreaWrapper-lvcifx-1 lokoIV"
+        onClick={[Function]}
+      >
+        <div
+          className="sukiListItemTitlestyled__StyledSukiListItemTitle-sc-1om802d-0 kinFhQ"
+        >
+          Test Patient
+        </div>
+        <div
+          className="sukiListItemSubtitlestyled__StyledSukiListItemSubtitle-sc-1txtyeo-0 fREnXW"
+        >
+          5 months • M • MRN ,12345
+        </div>
+      </div>
+    </li>
+    <li
+      className="sukiListItemstyled__StyledSukiListItem-lvcifx-0 duNFrf"
+      data-testid="listItem"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="sukiListItemstyled__StyledSukiTitleAreaWrapper-lvcifx-1 lokoIV"
+        onClick={[Function]}
+      >
+        <div
+          className="sukiListItemTitlestyled__StyledSukiListItemTitle-sc-1om802d-0 kinFhQ"
+        >
+          Test 10
+        </div>
+        <div
+          className="sukiListItemSubtitlestyled__StyledSukiListItemSubtitle-sc-1txtyeo-0 fREnXW"
+        >
+          -- • F • MRN ,12345
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

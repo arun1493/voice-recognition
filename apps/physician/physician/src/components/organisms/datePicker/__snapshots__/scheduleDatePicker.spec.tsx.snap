@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleDatePicker should match snapshot 1`] = `
+<div
+  className="datePickerstyled__DatePickerWrapper-sc-1ayq7at-0 iytZLG"
+  data-cy="date-picker"
+>
+  <div
+    className="datePickerstyled__StyledTriggerWrapper-sc-1ayq7at-1 liQdtB"
+    data-cy="date-picker-trigger"
+    onClick={[Function]}
+  >
+    <div
+      className="datePickerstyled__StyledDateInputWrapper-sc-1ayq7at-2 iAGlBu"
+    >
+      <input
+        className="datePickerstyled__StyledDateInput-sc-1ayq7at-3 bTfPNS"
+        data-cy="date-picker-input-control"
+        name="scheduleDatePicker"
+        onChange={[Function]}
+        onClick={[Function]}
+        type="date"
+      />
+    </div>
+  </div>
+</div>
+`;

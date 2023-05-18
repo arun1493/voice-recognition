@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteNoteDialog should match snapshot 1`] = `
+<div>
+  <div
+    className="modalMaskstyled__StyledBackdrop-sc-169llx0-0 fRODrN"
+  />
+  <dialog
+    className="dialogstyled__StyledDialog-a4znt9-0 czGhrd"
+  >
+    
+    <section
+      className="dialogstyled__DialogContent-a4znt9-3 ffmWsl"
+    >
+      <p
+        className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+        color="inherit"
+        cursor="default"
+        onClick={[Function]}
+        size="md"
+      >
+        Delete note?
+      </p>
+    </section>
+    <footer
+      className="dialogstyled__DialogFooter-a4znt9-4 jUbXLl"
+    >
+      <button
+        className="dialogButtonstyled__StyledDialogButton-uvbi7e-0 kFNoNK"
+        data-cy="dialog-button"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="dialogButtonstyled__StyledDialogButton-uvbi7e-0 kFNoNK"
+        data-cy="dialog-button"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </footer>
+  </dialog>
+</div>
+`;

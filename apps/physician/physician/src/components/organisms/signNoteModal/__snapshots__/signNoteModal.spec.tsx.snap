@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignNoteModal modal should match snapshot 1`] = `
+<div>
+  <div
+    className="modalMaskstyled__StyledBackdrop-sc-169llx0-0 fRODrN"
+  />
+  <dialog
+    className="dialogstyled__StyledDialog-a4znt9-0 czGhrd"
+  >
+    <header
+      className="dialogstyled__DialogHeader-a4znt9-1 ebNSod"
+    >
+      <h5
+        className="headerstyled__StyledH5-sc-1y4xvz5-4 iITAex"
+      >
+        No Patient Name
+      </h5>
+    </header>
+    <section
+      className="dialogstyled__DialogContent-a4znt9-3 ffmWsl"
+    >
+      <p
+        className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+        color="inherit"
+        cursor="default"
+        onClick={[Function]}
+        size="md"
+      >
+        Patient name is not set, so note can't be sent to your EMR yet.
+      </p>
+      <p
+        className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+        color="inherit"
+        cursor="default"
+        onClick={[Function]}
+        size="md"
+      >
+        Save to "Unfinished Notes" to finish later?
+      </p>
+    </section>
+    <footer
+      className="dialogstyled__DialogFooter-a4znt9-4 jUbXLl"
+    >
+      <button
+        className="dialogButtonstyled__StyledDialogButton-uvbi7e-0 kFNoNK"
+        data-cy="dialog-button"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="dialogButtonstyled__StyledDialogButton-uvbi7e-0 kFNoNK"
+        data-cy="dialog-button"
+        onClick={[Function]}
+      >
+        Finish Later
+      </button>
+    </footer>
+  </dialog>
+</div>
+`;

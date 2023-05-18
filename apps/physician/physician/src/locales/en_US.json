@@ -1,0 +1,1114 @@
+{
+  "components": {
+    "ambient": {
+      "ambient": "Ambient",
+      "cancel": "Cancel",
+      "generatingNote": "Generating note...",
+      "noteGenerated": "Note generated",
+      "paused": "Paused"
+    },
+    "clearInputButton": "Clear",
+    "hamburgerMenu": {
+      "options": {
+        "billing": "Billing",
+        "help": "Help",
+        "logOut": "Log Out",
+        "settings": "Settings",
+        "unfinishedNotes": "Unfinished Notes"
+      }
+    },
+    "newNoteButton": "New Note",
+    "noteMenu": {
+      "options": {
+        "delete": "Delete",
+        "help": "Help",
+        "print": "Print",
+        "settings": "Settings"
+      }
+    },
+    "noteSubmissionButton": "I'm done",
+    "patientProfile": {
+      "emptyStateText1": "There are no notes yet in Suki for this patient.",
+      "emptyStateText2": "Tap the \" ",
+      "emptyStateText3": "New Note\" button to create one."
+    },
+    "patientsMenu": {
+      "options": {
+        "help": "Help",
+        "import": "Import Schedule",
+        "print": "Print notes"
+      }
+    },
+    "patientsSearch": {
+      "input": {
+        "placeholder": "Enter Patient Name"
+      }
+    },
+    "profileMinimal": {
+      "notAvailable": "not available",
+      "mrn": "MRN"
+    },
+    "quillEditor": {
+      "unicodeFormatting": {
+        "error": "This content format is not yet supported and is not editable",
+        "message": "Converted unsupported text"
+      }
+    },
+    "suggestion": {
+      "insert": "Click to insert",
+      "reject": "Reject",
+      "title": "Suggestion"
+    },
+    "suggestionsPanel": {
+      "ed": "one of today's problems",
+      "pl": "on problem list",
+      "title": "Problems"
+    },
+    "termsCaption": {
+      "buttonText": "terms",
+      "disclaimer": "By e-signing, you accept Suki AI’s",
+      "terms": "By e-signing, you acknowledge and agree that you are solely responsible for the accuracy and completeness of your notes and meeting any third-party payor requirements."
+    },
+    "tooltip": {
+      "back": "Back",
+      "billableCode": "Billable code",
+      "chart": "Note is not associated with an encounter",
+      "close": "Close",
+      "closeCard": "Close card",
+      "delete": "Delete",
+      "emr": "Note was created in the EMR",
+      "finishedNote": "Finished Note",
+      "fontSize": "Font size",
+      "inEnhanced": "In Enhanced Review",
+      "menu": "Menu",
+      "more": "More",
+      "next": "Next",
+      "newNote": "New note",
+      "openCard": "Open card",
+      "patients": "Patients",
+      "previous": "Previous",
+      "readyToSign": "Ready to sign",
+      "refresh": "Pull from EMR",
+      "search": "Search",
+      "undo": "Undo",
+      "unfinishedNote": "Unfinished note",
+      "unfinishedNoteInEMR": "Unfinished note created in the EMR"
+    }
+  },
+  "date": {
+    "today": "Today",
+    "unknown": "Unknown Date",
+    "yesterday": "Yesterday"
+  },
+  "datePicker": {
+    "daysOfWeek": [
+      {
+        "abbr": "Sun",
+        "name": "Sunday"
+      },
+      {
+        "abbr": "Mon",
+        "name": "Monday"
+      },
+      {
+        "abbr": "Tue",
+        "name": "Tuesday"
+      },
+      {
+        "abbr": "Wed",
+        "name": "Wednesday"
+      },
+      {
+        "abbr": "Thu",
+        "name": "Thursday"
+      },
+      {
+        "abbr": "Fri",
+        "name": "Friday"
+      },
+      {
+        "abbr": "Sat",
+        "name": "Saturday"
+      }
+    ],
+    "months": [
+      {
+        "abbr": "Jan",
+        "name": "January"
+      },
+      {
+        "abbr": "Feb",
+        "name": "February"
+      },
+      {
+        "abbr": "Mar",
+        "name": "March"
+      },
+      {
+        "abbr": "Apr",
+        "name": "April"
+      },
+      {
+        "abbr": "May",
+        "name": "May"
+      },
+      {
+        "abbr": "Jun",
+        "name": "June"
+      },
+      {
+        "abbr": "Jul",
+        "name": "July"
+      },
+      {
+        "abbr": "Aug",
+        "name": "August"
+      },
+      {
+        "abbr": "Sep",
+        "name": "September"
+      },
+      {
+        "abbr": "Oct",
+        "name": "October"
+      },
+      {
+        "abbr": "Nov",
+        "name": "November"
+      },
+      {
+        "abbr": "Dec",
+        "name": "December"
+      }
+    ]
+  },
+  "emrConnectionToolbar": {
+    "button": "Try connecting",
+    "title": "Not connected to your EMR."
+  },
+  "errors": {
+    "network": {
+      "offline": "Poor internet connection"
+    },
+    "notes": {
+      "print": "Could not print notes. Please try again later.",
+      "save": "Could not save notes. Please try again later.",
+      "unknownPatient": "Unknown Patient"
+    },
+    "patient": {
+      "create": "Patient input to create patient is missing"
+    },
+    "s2": {
+      "addSection": "Error creating PBN section",
+      "copyForward": "No matching section found in previous note.",
+      "createNote": "Error creating note",
+      "deleteNote": "Error deleting note",
+      "deleteSection": "Error deleting PBN section",
+      "fetchNote": "Error fetching note",
+      "openAppointment": "Error opening appointment",
+      "openNote": "Error opening note",
+      "resourceExhausted": "To use Suki on this device, you need to log out from another device.",
+      "sameSectionNameAdded": "This note already has a problem with that name.",
+      "sameSectionNameCodeAdded": "The code you entered has a duplicate. You can change the code or continue.",
+      "showMeCommand": "That command is only available with EMR integration."
+    }
+  },
+  "global": {
+    "dob": "DOB",
+    "emrConnectionMessage": "EMR connected",
+    "gender": {
+      "female": "FEMALE",
+      "male": "MALE",
+      "unknown": "UNKNOWN"
+    },
+    "name": "Physician App",
+    "notAvailable": "N/A"
+  },
+  "messages": {
+    "tokenExpired": "Your login session expired, so to help with security we’ve signed you out."
+  },
+  "modals": {
+    "dateOfServiceConfirmation": {
+      "ok": "OK",
+      "primaryText": "It's the date of the patient’s most recent appointment.",
+      "secondaryText": "You can change the date of service by clicking it on the note.",
+      "title": "Setting Date of Service to"
+    },
+    "deleteModal": {
+      "button": {
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "deleteNoteTitle": "Delete note?",
+      "deleteNoteTypeTitle": "Delete note type?",
+      "deletePartialDictationCompositionError": "Note can only be removed by deleting or signing it in the EMR",
+      "deletePatientTitle": "Remove this patient from your list?",
+      "deleteProblemSubtitle": "This will also delete the problem content. Delete anyway?",
+      "deleteProblemTitle": "Delete Problem?",
+      "deleteScriptTitle": "Delete script?"
+    },
+    "emrSignIn": {
+      "message": "You’ll be redirected for a moment to sign into your EMR, then directed back.",
+      "ok": "OK",
+      "skip": "SKIP",
+      "title": "EMR Sign-In"
+    },
+    "iCD10LookupModal": {
+      "button": {
+        "change": "Change Code",
+        "remove": "Remove Code"
+      },
+      "diagnosesHeader": "Results",
+      "emptyResultsText1": "Your search",
+      "emptyResultsText2": "did not match any results.",
+      "moreResults": "Showing first 25 results. Type more terms to narrow.",
+      "placeholder": "Filter by name or code",
+      "poweredBy": "Powered by IMO® Terminology. © 2023",
+      "suggestionsHeader": "Suggestions",
+      "title": "ICD-10 Code Lookup"
+    },
+    "inActivityTimeout": {
+      "message": "You haven’t used Suki for an hour, so to help with security we’ll sign you out.",
+      "button": "Stay signed in"
+    },
+    "listOrScheduleModal": {
+      "button": {
+        "list": "Add to List",
+        "schedule": "Add to Schedule"
+      },
+      "emrTitle": "Add this patient to your Patients List?",
+      "error": {
+        "list": "Sorry, couldn’t add patient to your List",
+        "schedule": "Sorry, couldn’t add patient to your Schedule"
+      },
+      "title": "Add this patient to your Patients List or Schedule?"
+    },
+    "noteRefresh": {
+      "message": "This can take up to 30 seconds. Please edit and submit the note from Suki before making more edits in EMR.",
+      "success": "Note refreshed from EMR",
+      "title": "Refreshing from EMR"
+    },
+    "noteTypeDetails": {
+      "addNoteType": {
+        "mutationResponse": {
+          "error": "Error creating Note Type. Please try again.",
+          "title": "Note Type Created."
+        },
+        "title": "Add Note Type"
+      },
+      "addSection": "+ Add Section",
+      "deleteNoteType": {
+        "title": "Delete Section and Section Content?",
+        "mutationResponse": {
+          "error": "Error deleting Note Type. Please try again.",
+          "title": "Note Type Deleted."
+        }
+      },
+      "editNoteType": {
+        "mutationResponse": {
+          "error": "Error updating Note Type. Please try again.",
+          "invalidLength": "Name of Note Type shouldn't be longer than 255 characters.",
+          "title": "Note Type Updated."
+        },
+        "title": "Edit Note Type"
+      },
+      "editor": {
+        "placeholder": "Enter content (optional)"
+      },
+      "mutationResponse": {
+        "errors": {
+          "duplicatedName": "That name is already being used.",
+          "incorrectName": "Please only use letters and numbers in the name.",
+          "invalidName": "Please enter a Note Type name before saving.",
+          "longSectionContent": "Section content is limited to 100K characters.",
+          "unsavedChanges": "Discard Changes?"
+        }
+      },
+      "no": "No",
+      "noteTypeInputNameTip": "Choose a name that is easy to say and remember",
+      "noteTypeInputPlaceholder": "Enter Note Type Name",
+      "noteTypeSection": {
+        "pbLabel": "Problem Based",
+        "selectSection": "Select a Section"
+      },
+      "ok": "OK",
+      "rules": {
+        "addSections": "Please add sections to your Note Type.",
+        "nameNoteType": "Please enter a Note Type name before saving.",
+        "newSectionBeingCreated": "Oops! Please ensure your sections have names, or delete ones you no longer need.",
+        "onlyOnePbcAllowed": "Sorry, only one problem-based section is allowed per note type."
+      },
+      "save": "Save",
+      "title": "Note Type",
+      "yes": "Yes"
+    },
+    "printOrSave": {
+      "button": {
+        "cancel": "Cancel",
+        "print": "Print",
+        "save": "Save"
+      },
+      "message": "This will print or save all of the notes for appointments on this date.",
+      "title": "Print or Save notes"
+    },
+    "scriptDetails": {
+      "addScript": {
+        "mutationResponse": {
+          "error": "Error creating Script. Please try again.",
+          "title": "Script Created."
+        },
+        "title": "Add Script"
+      },
+      "anySection": "Any Section",
+      "anySectionDictation": "Any section I'm dictating in",
+      "editScript": {
+        "mutationResponse": {
+          "error": "Error updating Script. Please try again.",
+          "invalidLength": "Name of script shouldn't be longer than 255 characters.",
+          "title": "Script Updated."
+        },
+        "title": "Edit Script"
+      },
+      "editor": {
+        "placeholder": "Enter Script Content"
+      },
+      "insertInSectionLabel": "Insert In",
+      "insertion": {
+        "noSectionFound": "Script section not found in note",
+        "notInFocus": "No section in focus, unable to insert script"
+      },
+      "mutationResponse": {
+        "errors": {
+          "duplicatedName": "That name is already being used.",
+          "incorrectName": "Please only use letters and numbers in the name.",
+          "invalidName": "Please enter a Script Name before saving.",
+          "longScriptContent": "Scripts are limited to 64K characters."
+        }
+      },
+      "rules": {
+        "addContent": "Please enter some content for your script.",
+        "nameScript": "Please enter a Script name before saving.",
+        "noSectionSelected": "Please select a section for your script."
+      },
+      "save": "Save",
+      "scriptDeletingFailed": "Could not delete script. Please try again.",
+      "scriptDeletingSuccess": "Script Deleted.",
+      "scriptInputNameTip": "Choose a name that is easy to say and remember",
+      "scriptInputPlaceholder": "Enter Script Name",
+      "selectSection": "Select Section",
+      "title": "Script"
+    },
+    "scriptsList": {
+      "emptyScriptsList": {
+        "title": "No Scripts"
+      },
+      "footer": "Add New Script",
+      "subtitle": "Say \"Suki insert…",
+      "title": "Scripts"
+    },
+    "searchPatients": {
+      "emptyResults": "No results found for this name",
+      "input": {
+        "placeholder": "Enter name"
+      },
+      "title": "Search by Name"
+    },
+    "signNoteModal": {
+      "confirmICDCodes": {
+        "button": "Continue",
+        "epicGenericWarningText": "This code may not be specific enough to appear as a Visit Diagnosis in your EMR. You can choose a different ICD-10 code here or select a diagnosis in your EMR.",
+        "text": "Choose or change diagnoses codes for this note.",
+        "title": "Confirm codes"
+      },
+      "initial": {
+        "buttonText": "Sign note",
+        "enhancedReview": "Enhanced review",
+        "orText": "or",
+        "title": "Sign note",
+        "titleWithEnhancedReview": "Sign note now?"
+      },
+      "initialAthena": {
+        "buttonText": "Send now",
+        "title": "Send note to EMR"
+      },
+      "missingICDCodes": {
+        "addMoreCodes": "Add more codes",
+        "skip": "Submit with missing codes",
+        "title1": "Some problems do not",
+        "title2": "have ICD-10 codes"
+      },
+      "multipleEncounters": {
+        "saveToUnfinishedNotes": "Save to unfinished notes",
+        "submitToEMR": "Submit to EMR chart",
+        "text": "or",
+        "title": "Select the visit for this note"
+      },
+      "noEncounter": {
+        "cancelButton": "Cancel",
+        "saveToUnfinishedButton": "Save to Unfinished Notes",
+        "text1": "Oops! No encounter was found for this patient in your EMR.",
+        "text2": "Save this note to Unfinished Notes and try again later, or reach out to us for help",
+        "title": "No open encounter for this patient"
+      },
+      "noEncounterEmrChart": {
+        "cancelButton": "Cancel",
+        "saveToUnfinishedButton": "Save to Unfinished Notes",
+        "submitting": "Submitting",
+        "submitToChart": "Submit to Chart",
+        "text1": "This patient doesn't have an open encounter in the EMR.",
+        "text2": "Submit the note to the patient's chart?",
+        "title": "No Open Encounter"
+      },
+      "noteEnhancedReviewNoOpenEncounter": {
+        "button": {
+          "dontShow": "Don't show this again",
+          "ok": "OK"
+        },
+        "text1": "The patient does not have an open encounter so the note will be saved to their chart as a PDF after processing.",
+        "text2": "If the encounter is opened during Enhanced Review, the note will be saved to the encounter.",
+        "title": "The note has been sent for Enhanced Review"
+      },
+      "noLabResults": {
+        "title": "No lab results found in EMR"
+      },
+      "noPatient": {
+        "cancelButton": "Cancel",
+        "saveButton": "Finish Later",
+        "text1": "Patient name is not set, so note can't be sent to your EMR yet.",
+        "text2": "Save to \"Unfinished Notes\" to finish later?",
+        "title": "No Patient Name"
+      },
+      "noValidObEpisode": {
+        "title": "No OB Episode and/or Flowsheet found in EMR"
+      },
+      "submissionWarning": {
+        "cancelButton": "Cancel",
+        "saveToUnfinishedButton": "Save to Unfinished Notes"
+      },
+      "saveNote": {
+        "errorSubmit": {
+          "text1": "Error submitting note",
+          "text2": "Could not submit note. Please try again."
+        },
+        "oneEncounterTip": "Sending note to EMR",
+        "oneEncounterWithAllowSigning": "Sign-off complete. Sending note to EMR",
+        "oneEncounterWithoutAllowSigning": "Sending note to EMR",
+        "saveToUnfinishedNotesTip": "Save to unfinished notes",
+        "sendingToEMRChartTip": "Sending note to patient’s EMR chart",
+        "sentToEMRChartTip": "Note submitted to patient’s EMR chart",
+        "tipEmrText": "Sending note to patient's EMR chart",
+        "tipNoEmr": "Sign-off complete",
+        "tipEnhancedReview": "Note will be ready for sign-off when Suki has finished processing it.",
+        "tipEnhancedReviewForEmr": "Note will be sent as PDF to patient's chart in EMR after Suki has finished processing it."
+      },
+      "submit": {
+        "buttonText": "Confirm",
+        "title": "Sign note",
+        "titleWithEnhancedReview": "Sign note now?"
+      },
+      "submitAthena": {
+        "buttonText": "Send now",
+        "title": "Send note to EMR"
+      },
+      "unableToReachEmr": {
+        "okButton": "ok",
+        "text": "Suki has saved it with your Unfinished Notes, so you can try again later",
+        "title": "Oops! Unable to reach the EMR at the moment"
+      }
+    },
+    "whatCanISay": {
+      "embedOptions": [
+        {
+          "placeholder": "<section name>"
+        },
+        {
+          "command": "Stop"
+        },
+        {
+          "command": "Show my scripts"
+        },
+        {
+          "command": "Insert",
+          "placeholder": "<script name>"
+        },
+        {
+          "command": "Change",
+          "placeholder": "<field name>"
+        },
+        {
+          "command": "Undo"
+        },
+        {
+          "command": "Copy forward",
+          "placeholder": "<section name>"
+        }
+      ],
+      "goToHelp": "Go to help center",
+      "noteOptions": [
+        {
+          "command": "Go to",
+          "placeholder": "<section name>"
+        },
+        {
+          "command": "Stop"
+        },
+        {
+          "command": "Undo"
+        },
+        {
+          "command": "Insert",
+          "placeholder": "<script name>"
+        },
+        {
+          "command": "Change",
+          "placeholder": "<field within a template>"
+        },
+        {
+          "command": "Copy forward",
+          "placeholder": "<section name>"
+        },
+        {
+          "command": "Show vital signs"
+        },
+        {
+          "command": "Show medications"
+        },
+        {
+          "command": "Show allergies"
+        },
+        {
+          "command": "Show past medical history"
+        },
+        {
+          "command": "Show past surgical history"
+        },
+        {
+          "command": "I'm done"
+        },
+        {
+          "command": "Delete this note"
+        },
+        {
+          "command": "Print this note"
+        },
+        {
+          "command": "Patient name is",
+          "placeholder": "<patient name>"
+        }
+      ],
+      "options": [
+        {
+          "command": "Show my schedule"
+        },
+        {
+          "command": "Show my list"
+        },
+        {
+          "command": "Create a",
+          "placeholder": "<note type>"
+        },
+        {
+          "command": "Create a note"
+        },
+        {
+          "command": "Go to unfinished notes"
+        },
+        {
+          "command": "Log out"
+        },
+        {
+          "command": "Help"
+        },
+        {
+          "command": "Go back"
+        },
+        {
+          "command": "Go home"
+        },
+        {
+          "command": "Go to settings"
+        },
+        {
+          "command": "Show my scripts"
+        },
+        {
+          "command": "Show my note types"
+        }
+      ],
+      "integratedPatientProfileOptions": [
+        {
+          "command": "Show my schedule"
+        },
+        {
+          "command": "Show my list"
+        },
+        {
+          "command": "Create a",
+          "placeholder": "<note type>"
+        },
+        {
+          "command": "Create a note"
+        },
+        {
+          "command": "Go to unfinished notes"
+        },
+        {
+          "command": "Log out"
+        },
+        {
+          "command": "Help"
+        },
+        {
+          "command": "Go back"
+        },
+        {
+          "command": "Go home"
+        },
+        {
+          "command": "Go to settings"
+        },
+        {
+          "command": "Show my scripts"
+        },
+        {
+          "command": "Show my note types"
+        },
+        {
+          "command": "Show vital signs"
+        },
+        {
+          "command": "Show medications"
+        },
+        {
+          "command": "Show allergies"
+        },
+        {
+          "command": "Show past medical history"
+        },
+        {
+          "command": "Show past surgical history"
+        }
+      ],
+      "subtitle": "You can also say \"Suki...",
+      "title": "What can I say?"
+    },
+    "noteTypes": {
+      "emptyNoteTypes": {
+        "buttonLabel": "Go to settings",
+        "descriptionLine1": "To create a note, you’ll need to define at least one note type.",
+        "descriptionLine2": "You can add and edit note types in Suki’s Settings.",
+        "title": "No Note Types"
+      },
+      "title": "Which note type?"
+    }
+  },
+  "pages": {
+    "auth": {
+      "redirect": {
+        "loading": "Upgrading you to a newer experience"
+      }
+    },
+    "emrRegistration": {
+      "nextSteps": "Connect Your ",
+      "nextSteps1": " Account",
+      "skipToPayment": "No thanks, skip to payment",
+      "text1": "Suki works best when integrated with  ",
+      "text2": " Connect to see your patient list and submit ",
+      "text3": " notes directly within Suki. Check in with a Suki expert to get started.",
+      "title": "Good news"
+    },
+    "gettingStarted": {
+      "commands": {
+        "ASK_SUKI_HELP": "\"Suki, What can I say ?\"",
+        "CLICK_TO_LEARN": "Click to learn how.",
+        "CLICK_TO_DOWNLOAD": "Click to download.",
+        "CREATE_A_NOTE": "Create a note: Say “Suki, create a note” or tap New Note button in the lower right corner.",
+        "DOWNLOAD_MOBILE_APP": "Download the mobile app: Use Suki on the go, as a microphone for Suki Windows and more.",
+        "GET_HELP": "Get help: Say “Suki, help” to learn more about Suki or chat with us.",
+        "IMPORT_SCHEDULE": "Import your schedule: Say “Suki, show my patients” or click on the Patients icon in the upper right corner to learn how. ",
+        "INSTALL_SUKI_WINDOWS": "Install Suki Windows app: Dictate anywhere and unlock features like transfer note.",
+        "NOTES_COMPLETION": "Complete 5 notes in Suki",
+        "PATIENTS_ICON_CLICK": "Tap Patients to see your schedule or patient list",
+        "PLAY_DEMO": "Play Demo",
+        "TOGGLE_AGENT": "Turn Suki badge off and on"
+      },
+      "description": "Try these actions or voice commands",
+      "heading": "Getting Started"
+    },
+    "forgotPassword": {
+      "buttons": {
+        "cancel": "Cancel",
+        "reset": "Reset Password"
+      },
+      "heading": "Forgot Password",
+      "input": {
+        "placeholder": "Enter email address"
+      },
+      "message": "Please enter your Suki account email address, then check your email to finish resetting your password.",
+      "tip": "Check your email for instructions to reset your password. Or contact support@suki.ai"
+    },
+    "help": {
+      "items": {
+        "chat": {
+          "label": "Or chat with us.",
+          "text": "Message us if you cant find what you need above."
+        },
+        "download": {
+          "label": "Download Suki.",
+          "text": "Download and access Suki on mobile, Windows, and web here."
+        },
+        "find": {
+          "label": "Find answers.",
+          "text": "Check out the Suki Help Center for FAQs & tutorials."
+        },
+        "play": {
+          "label": "See an example.",
+          "text": "Watch how Suki can help you create notes."
+        }
+      },
+      "serviceStatus": {
+        "label": "Service Status",
+        "status": {
+          "DEGRADED": "Degraded Performance",
+          "OK": "All System OK",
+          "MAINTENANCE": "Under Maintenance",
+          "MAJOR_OUTAGE": "Major Outage",
+          "PARTIAL_OUTAGE": "Partial Outage"
+        }
+      },
+      "title": "Help"
+    },
+    "import": {
+      "title": "Import Schedule"
+    },
+    "introScreen1": {
+      "description": "Suki only listens when awake.",
+      "heading": "Tap here to wake Suki."
+    },
+    "introScreen2": {
+      "buttons": {
+        "play": "Play Demo",
+        "skip": "Skip"
+      },
+      "description": "To get started, here’s a brief video that shows how I can help you create a note.",
+      "heading": "Hello, I’m Suki.",
+      "video": {
+        "button": "Close"
+      }
+    },
+    "login": {
+      "accountText": "Don’t have an account?",
+      "button": "Log in",
+      "forgotPassword": "Forgot password",
+      "input": {
+        "email": {
+          "placeholder": "Enter email address"
+        },
+        "password": {
+          "placeholder": "Enter password"
+        }
+      },
+      "loginInProgressText": "Logging In",
+      "register": "Sign up"
+    },
+    "note": {
+      "button": {
+        "addCode": "Add Code",
+        "newProblem": "New Problem"
+      },
+      "cards": {
+        "errors": {
+          "allergies": "No allergies found.",
+          "allergiesNkda": "NKDA (No Known Drug Allergies)",
+          "medicalHistory": "No medical history found.",
+          "medication": "No medications found.",
+          "surgicalHistory": "No surgical history found.",
+          "vitals": "No vitals found."
+        },
+        "medications": {
+          "lessButton": "less",
+          "moreButton": "more"
+        },
+        "titles": {
+          "allergies": "Allergies",
+          "medicalHistory": "Past Medical History",
+          "medication": "Medication",
+          "surgicalHistory": "Past Surgical History",
+          "vitals": "Vital Signs"
+        },
+        "vitalSigns": {
+          "bloodPressure": "BP",
+          "bmi": "BMI",
+          "heartRate": "HR",
+          "height": "HT",
+          "respiratoryRate": "RR",
+          "pulse": "O2sat",
+          "temperature": "TEMP",
+          "weight": "WT"
+        }
+      },
+      "noEditableSections": "No editable sections",
+      "patientInformation": {
+        "age": "Age",
+        "createNewPatient": "Create New Patient",
+        "dateOfBirth": "DATE OF BIRTH",
+        "dateOfService": "DATE OF SERVICE",
+        "dateUnknown": "__/__/__",
+        "medicalRecordNumber": "MRN",
+        "mrnUnknown": "______"
+      },
+      "problemNamePlaceholder": "Say problem name",
+      "processingNote": "Suki is currently processing this note. It will be available for your review in a few minutes.",
+      "readOnly": "Read Only"
+    },
+    "pageNotFound": {
+      "heading": "Sorry",
+      "message": "We couldn’t find that page."
+    },
+    "password": {
+      "activating": "Activating",
+      "error": {
+        "alreadyExists": "Account already exists",
+        "linkExpired": "Link has expired. Please register again"
+      },
+      "placeholder1": "Enter new password",
+      "placeholder2": "Repeat new password",
+      "processing": "Processing",
+      "requirement1": "At least 8 characters",
+      "requirement2": "A lowercase letter",
+      "requirement3": "An uppercase letter",
+      "requirement4": "A number",
+      "requirement5": "No parts of your username",
+      "requirements": "Password requirements:",
+      "submit": "Activate Account",
+      "tipDuplicatePasswordMessage": "Passwords do not match",
+      "tipPasswordMessage": "Password does not meet requirements",
+      "title": "Finish Suki account setup by creating your password"
+    },
+    "patients": {
+      "checkingUpdates": "Checking EMR for updates...",
+      "list": {
+        "addPatient": "Add",
+        "emptyPatientList": {
+          "text1": "Add Patients to your list to create notes for them. ",
+          "text2": "Remove them when you no longer treat them."
+        },
+        "title": "List"
+      },
+      "profile": {
+        "currentNotes": "Current Notes",
+        "emrNoteName": "Note",
+        "priorNotes": "Prior Notes",
+        "startProgress": "Start progress note"
+      },
+      "schedule": {
+        "emptySchedule": "No appointments today.",
+        "title": "Schedule",
+        "today": "Today"
+      },
+      "title": "Patients"
+    },
+    "registerSuccess": {
+      "footerTextLineOne": "The Suki name and logo are trademarks of Suki AI, Inc. All other trademarks are the property of their respective owners.",
+      "footerTextLineTwo": "© 2023 Suki AI, Inc.",
+      "textLastStepPart1": "After you download the app, we will send you more information on",
+      "textLastStepPart2": "steps 2 and 3.",
+      "textLineOnePart1": "Your account has been successfully created. Login to start using Suki and save time on administrative tasks.",
+      "textLineOnePart2": "For best experience, please download the Suki mobile app or access using a web browser on your desktop.",
+      "textStepOne": "Alternately, download the Suki mobile or Windows app.",
+      "welcome": "Welcome!"
+    },
+    "settings": {
+      "appearance": {
+        "theme": {
+          "auto": "Auto",
+          "dark": "Dark",
+          "light": "Light"
+        },
+        "title": "Appearance"
+      },
+      "noteType": {
+        "button": {
+          "title": "Add"
+        },
+        "emptyNoteTypesResults": {
+          "text1": "You have no Note Types.",
+          "text2": "To add a Note Type, tap \"Add Note Type\" button."
+        },
+        "title": "Note Types"
+      },
+      "preview": {
+        "copy": "Copy",
+        "delete": "Delete",
+        "edit": "Edit",
+        "insert": "Insert"
+      },
+      "scripts": {
+        "button": {
+          "title": "Add"
+        },
+        "emptyScriptsResults": {
+          "text1": "You have no scripts.",
+          "text2": "To add a script, tap \"Add\" button."
+        },
+        "title": "Scripts"
+      },
+      "title": "Settings",
+      "types": {
+        "organization": "Organization",
+        "personal": "Personal"
+      }
+    },
+    "signUp": {
+      "agreement1": "I agree to",
+      "agreement2": "Suki's Technology Services Agreement",
+      "agreement3": "and the",
+      "agreement4": "Business Associate Agreement",
+      "errors": {
+        "agreement": "Accept agreements to continue",
+        "email": "Enter valid email",
+        "emr": "Enter Your EMR",
+        "firstName": "Enter first name",
+        "general": "Not valid value",
+        "lastName": "Enter last name",
+        "maxOrganizationLength": "Max length for organization name is 75 characters",
+        "maxTextFieldLength": "Max length is 255 characters",
+        "minOrganizationLength": "Min length for organization name is 3 characters",
+        "minTextFieldLength": "Min length is 2 characters",
+        "organizationName": "Enter the name of your hospital, clinic or practice",
+        "phoneNumber": "Enter 10-digit phone number",
+        "recaptcha": "Indicate you’re not a robot to continue",
+        "specialty": "Enter specialty"
+      },
+      "errorEmailTitle": "Account already exists with this email address. Please click 'Forgot password to reset your password",
+      "errorOrganizationTitle": "The organization name you provided already has an account with Suki. Please contact our support team at support@Suki.ai so that we can create an account for you.",
+      "errorTitle": "Sorry we are unable to create an account for you. Please contact our support team at support@Suki.ai.",
+      "female": "Female",
+      "male": "Male",
+      "placeholder": {
+        "email": "Email",
+        "emr": "EHR",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "organizationName": "Organization name",
+        "phoneNumber": "Phone number",
+        "specialty": "Specialty",
+        "suffix": "Suffix"
+      },
+      "processing": "Processing",
+      "registrationEmail": {
+        "almostDone": "Almost done",
+        "alreadyRegistered": "You are already registered. Please login to the Suki app.",
+        "checkEmail": "Check your email to complete your registration.",
+        "checkSpam": "Check your spam folder or",
+        "didn'tGetEmail": "Didn't get the email?",
+        "requestLink": "request another email",
+        "successTip": "Email sent"
+      },
+      "submitButton": "Proceed to subscribe",
+      "title": "Create a Suki Account"
+    },
+    "unfinishedNotes": {
+      "noUnfinishedNotes": "Congratulations! You have no unfinished notes in Suki.",
+      "title": "Unfinished Notes",
+      "unknownPatient": "Unknown Patient",
+      "createdLabel": "created"
+    },
+    "unSupportedDeviceOrBrowser": {
+      "error": "For the best experience please use Suki on a desktop or download the mobile app"
+    },
+    "windowsDownload": {
+      "left": {
+        "dateLabel": "Date:",
+        "heading": "Whatʼs new in this version?",
+        "versionLabel": "Version:"
+      },
+      "right": {
+        "heading1": "Release notes",
+        "heading2": "With this release, you can:",
+        "heading3": "Known issues"
+      },
+      "top": {
+        "button": "Download for .Net6",
+        "description": "The Suki Assistant Windows app lets you use the intelligence of Suki to dictate in any field or application on a Windows computer. Download the latest version now.",
+        "downloadNet3": "Or download for .Net3.1",
+        "heading1": "Download the",
+        "heading2": "Suki Assistant Windows app",
+        "howToInstallWindows": "Learn how to install Windows.",
+        "needHelp": "Need Help? "
+      }
+    },
+    "xLiteSuccess": {
+      "footerTextLineOne": "The Suki name and logo are trademarks of Suki AI, Inc. All other trademarks are the property of their respective owners.",
+      "footerTextLineTwo": "© 2023 Suki AI, Inc.",
+      "lineOne": "Your account has been successfully created.",
+      "lineTwoLargeScreen": "The Suki Assistant Windows app lets you use the intelligence of Suki to dictate in any field or application on a Windows computer. Download the latest version now.",
+      "lineTwoPart1": "On your Windows computer, please visit",
+      "lineTwoPart2": "www.suki.ai/WindowsUpdate",
+      "lineTwoPart3": "to download Suki Assistant for Windows.",
+      "lineThreeDowloadWindowsText": "Click here for instructions.",
+      "title": "Welcome!"
+    },
+    "importSchedule": {
+      "dropdown": {
+        "description1": "A CSV is a text file that can be created and edited using any text editor. More frequently, however, a CSV file is created by exporting (File > Export) a spreadsheet or database in the program that made it.",
+        "description2": "A properly formatted CSV template is provided. Download the CSV templates to add your schedule to your spreadsheet application.",
+        "description3": "Format your CSV to have these column headers in the first row.",
+        "description4": "Drag and drop the CSV file to the drag-and-drop box, or click to browse for a CSV file. You can upload one CSV file at a time.",
+        "link": "Download the schedule CSV template",
+        "listItem1": "MRN",
+        "listItem2": "First name",
+        "listItem3": "Last name",
+        "listItem4": "Sex",
+        "listItem5": "Date of birth",
+        "listItem6": "Appointment date",
+        "listItem7": "Appointment time (optional)",
+        "listItem8": "Appointment duration in minutes (optional)",
+        "note": "Note",
+        "noteContent": "Drag and drop the CSV file to the drag-and-drop box, or click to browse for a CSV file. You can upload one CSV file at a time.",
+        "title": "Learn how to set up your CSV file",
+        "title1": "What is a CSV file?",
+        "title2": "Download a CSV template for importing.",
+        "title3": "Or you can prepare your CSV file.",
+        "text1": "Appointment date defaults to today if left blank.",
+        "text2": "Format dates as mm/dd/yyyy. Format times as hh:mm 24 hour times – for example 14:30.",
+        "title4": "Ready to import?"
+      },
+      "dropZone": {
+        "dndCsv": "Drag and drop CSV file",
+        "errors": {
+          "duplicateMRN": {
+            "line1": "Multiple patients found with same MRN.",
+            "line2": "Remove duplicates and try again"
+          },
+          "duplicateRows": {
+            "line1": "Duplicate records detected.",
+            "line2": "Remove duplicates and try again"
+          },
+          "emptyFile": {
+            "line1": "Empty file detected.",
+            "line2": "Add records and try again"
+          },
+          "extension": {
+            "line1": "Only CSV files are allowed.",
+            "line2": "Try again or click here"
+          },
+          "invalidLayout": {
+            "line1": "Incorrect file layout.",
+            "line2": "Column order and data layout must match template"
+          },
+          "maxRowsExceeded": {
+            "line1": "Record count exceeds maximum allowed.",
+            "line2": "Reduce total records and try again"
+          },
+          "serverError": {
+            "line1": "File upload failed.",
+            "line2": "Try again"
+          }
+        },
+        "loading": "This process can take a moment...",
+        "orClickHere": "or click here"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar component should match snapshot 1`] = `
+<div
+  className="progressBarstyled__StyledBarContainer-sc-1ryqtdv-0 cwPInP"
+>
+  <div
+    className="progressBarstyled__StyledProgressItem-sc-1ryqtdv-1 progressBarstyled__StyledCompletedItem-sc-1ryqtdv-3 fwFsfl fWeTCp"
+  />
+  <div
+    className="progressBarstyled__StyledProgressItem-sc-1ryqtdv-1 progressBarstyled__StyledCompletedItem-sc-1ryqtdv-3 fwFsfl fWeTCp"
+  />
+  <div
+    className="progressBarstyled__StyledProgressItem-sc-1ryqtdv-1 progressBarstyled__StyledCompletedItem-sc-1ryqtdv-3 fwFsfl fWeTCp"
+  />
+  <div
+    className="progressBarstyled__StyledProgressItem-sc-1ryqtdv-1 progressBarstyled__StyledPendingItem-sc-1ryqtdv-2 fwFsfl bcfOoZ"
+  />
+  <div
+    className="progressBarstyled__StyledProgressItem-sc-1ryqtdv-1 progressBarstyled__StyledPendingItem-sc-1ryqtdv-2 fwFsfl bcfOoZ"
+  />
+</div>
+`;

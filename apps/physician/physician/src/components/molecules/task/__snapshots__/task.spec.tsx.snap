@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task should match snapshot 1`] = `
+<div
+  className="taskstyled__StyledTask-sc-1n5gkgl-0 krPpMb"
+>
+  <div
+    className="taskstyled__StyledItem-sc-1n5gkgl-1 fjArXj"
+  >
+    <svg
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="11"
+        cy="11"
+        fill="#E6E6E6"
+        fillRule="evenodd"
+        opacity="1"
+        r="11"
+        transform="translate(1 1)"
+      />
+    </svg>
+    <p
+      className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+      color="inherit"
+      cursor="default"
+      onClick={[Function]}
+      size="md"
+    >
+      Task title
+    </p>
+  </div>
+  <div
+    className="taskstyled__StyledChildrenContainer-sc-1n5gkgl-2 ehrpBb"
+  />
+</div>
+`;
+
+exports[`Task should match snapshot with additional props 1`] = `
+<div
+  className="taskstyled__StyledTask-sc-1n5gkgl-0 krPpMb"
+>
+  <div
+    className="taskstyled__StyledItem-sc-1n5gkgl-1 fjArXj"
+  >
+    <svg
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="11"
+        cy="11"
+        fill="#E6E6E6"
+        fillRule="evenodd"
+        opacity="1"
+        r="11"
+        transform="translate(1 1)"
+      />
+    </svg>
+    <p
+      className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+      color="inherit"
+      cursor="default"
+      onClick={[Function]}
+      size="md"
+    >
+      Task title
+    </p>
+  </div>
+  <div
+    className="taskstyled__StyledChildrenContainer-sc-1n5gkgl-2 ehrpBb"
+  />
+</div>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileMinimal should match snapshot 1`] = `
+<div
+  className="profileMinimalstyled__StyledProfileMinimal-sc-17y74xl-0 dTuKka"
+  data-cy="profile-minimal"
+>
+  <div
+    className="initialsAvatarstyled__StyledInitialsAvatar-sc-1fhzzqc-0 fuMHvf"
+    onClick={[Function]}
+  >
+    TT
+  </div>
+  <p
+    className="textstyled__StyledText-sc-1vedkxi-0 ehJPLS"
+    color="inherit"
+    cursor="default"
+    onClick={[Function]}
+    size="2xl"
+  >
+    Test Test
+  </p>
+  <p
+    className="textstyled__StyledText-sc-1vedkxi-0 fDyqSY"
+    color="inherit"
+    cursor="default"
+    onClick={[Function]}
+    size="md"
+  >
+    N/A
+     • 
+    N/A
+     • 
+    DOB N/A
+  </p>
+  <p
+    className="textstyled__StyledText-sc-1vedkxi-0 leaaTa"
+    color="inherit"
+    cursor="default"
+    onClick={[Function]}
+    size="sm"
+  >
+    MRN
+    : 
+    111
+  </p>
+</div>
+`;
