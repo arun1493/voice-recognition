@@ -2,11 +2,11 @@
 import styles from './app.module.scss';
 
 import NxWelcome from './nx-welcome';
-
+import VoiceToTextConverter from './lib/VoiceToTextConverter';
 export function App() {
   return (
     <div>
-      <NxWelcome title="app" />
+      <VoiceToTextConverter />
     </div>
   );
 }
