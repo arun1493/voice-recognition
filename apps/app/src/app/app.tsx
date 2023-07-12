@@ -1,12 +1,27 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
+import VoiceInput from './lib/VoiceInput';
 
-import NxWelcome from './nx-welcome';
-import VoiceToTextConverter from './lib/VoiceToTextConverter';
 export function App() {
+
+
+  const client = new WebSocket('ws://localhost:8080');
+
+  client.onopen = () => {
+    console.log('WebSocket Client Connected');
+  };
+
+  client.onmessage = (message) => {
+    console.log(message);
+  };
+
+  client.onerror = function () {
+    console.log('Connection Error');
+  };
+
   return (
     <div>
-      <VoiceToTextConverter />
+      <VoiceInput onDataAvailable={() => { }} />
     </div>
   );
 }
