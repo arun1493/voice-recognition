@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import socketClient from './Websocket'
 
 const getMicroPhone = async () => {
     try {
@@ -30,10 +31,12 @@ const VoiceRecorder: React.FC<Props> = (props) => {
         recorder.ondataavailable = (event) => {
             console.log("ondataavailable!", event.data)
             onDataAvailable(event.data)
+            socketClient.send(event.data)
         }
         
     }
 
+    
     const startRecording = async () => {
         const stream = await getMicroPhone()
         setStream(stream)
