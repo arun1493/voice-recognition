@@ -6,6 +6,7 @@
 import express from 'express';
 import * as path from 'path';
 import { WebSocketServer } from 'ws';
+import transcribe from './speechToText';
 const cors = require("cors");
 
 const wss = new WebSocketServer({ port: 8080 });
@@ -13,9 +14,9 @@ const wss = new WebSocketServer({ port: 8080 });
 
 wss.on('connection', function connection(ws) {
   ws.on('message', function message(data) {
-    console.log('received: %s', data);
+    // console.log('received: %s', data);
+    transcribe(data)
   });
-
   ws.send('something here');
 });
 

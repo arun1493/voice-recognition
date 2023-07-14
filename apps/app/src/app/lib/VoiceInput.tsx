@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import socketClient from './Websocket'
+import Recorder from './Recorder'
 
 const getMicroPhone = async () => {
     try {
@@ -19,35 +20,41 @@ interface Props {
     onDataAvailable: (data: Blob) => void
 }
 
+var recorder;
+
 const VoiceRecorder: React.FC<Props> = (props) => {
 
     const [stream, setStream] = useState<MediaStream | undefined>(undefined)
 
     const requestDataId = useRef<ReturnType<typeof setInterval> | null>(null)
 
-    const { onDataAvailable } = props
-
-    const attachHandlers = (recorder: MediaRecorder) => {
-        recorder.ondataavailable = (event) => {
-            console.log("ondataavailable!", event.data)
-            onDataAvailable(event.data)
-            socketClient.send(event.data)
-        }
-        
-    }
-
     
     const startRecording = async () => {
         const stream = await getMicroPhone()
+
+        
         setStream(stream)
-        if (stream) {
-            const recorder = new MediaRecorder(stream)
-            attachHandlers(recorder)
-            recorder.start()
-            requestDataId.current = setInterval(() => {
-                recorder.requestData()
-            }, 100)
+
+        if(stream) {
+            const context = new AudioContext();
+            const mediaStreamSource = context.createMediaStreamSource(stream);
+            recorder = new Recorder(mediaStreamSource);
+            recorder.record()
+
+            requestDataId.current = setInterval(function() {
+
+                recorder.exportWAV(function(blob) {
+                    console.log('YAY', blob)
+                    recorder.clear();
+                    socketClient.send(blob);
+                    Recorder.forceDownload(blob, 'test.wav')
+                });
+            }, 2000);
+            
+
+
         }
+      
     }
 
     const toggleMic = () => {
@@ -60,8 +67,9 @@ const VoiceRecorder: React.FC<Props> = (props) => {
 
     const stopMic = () => {
         requestDataId.current && clearInterval(requestDataId.current)
-        stream && stream.getTracks().forEach(track => track.stop());
+        // stream && stream.getTracks().forEach(track => track.stop());
         setStream(undefined);
+        recorder.stop()
     }
 
 
