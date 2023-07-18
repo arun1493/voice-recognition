@@ -15,6 +15,7 @@ const convertSpeechToText = (audioBuffer) => {
     const config = {
         encoding: 'LINEAR16',
         languageCode: 'en-US',
+        sampleRateHertz: 16000,
         audioChannelCount: 2,
         
     };
@@ -24,6 +25,8 @@ const convertSpeechToText = (audioBuffer) => {
         config,
     };
 
+    console.log(config)
+
     // Detects speech in the audio file
     return speechClient
         .recognize(request)
@@ -32,7 +35,9 @@ const convertSpeechToText = (audioBuffer) => {
             const transcription = results
                 .map(result => result.alternatives[0].transcript)
                 .join('\n');
+            console.log('trans', transcription)
             return transcription
+
         })
         .catch(err => {
             console.error('ERROR:', err);

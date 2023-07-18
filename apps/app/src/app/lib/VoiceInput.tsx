@@ -34,18 +34,21 @@ const VoiceRecorder: React.FC<Props> = ({ onDataAvailable }) => {
         setStream(stream)
 
         if (stream) {
-            const context = new AudioContext();
+            const context = new AudioContext({ sampleRate: 16000, latencyHint: 'interactive' });
+            console.log(context)
             const mediaStreamSource = context.createMediaStreamSource(stream);
-            recorder.current = new Recorder(mediaStreamSource);
+            recorder.current = new Recorder(mediaStreamSource, {bufferLen: 1024, sampleRate: 16000});
 
             recorder.current.record()
 
             intrevalRef.current = setInterval(function () {
                 recorder.current.exportWAV(function (blob) {
                     recorder.current.clear();
+                    console.log(blob.size)
+
                     onDataAvailable(blob)
                 });
-            }, 1500);
+            }, 1000);
         }
     }
 
