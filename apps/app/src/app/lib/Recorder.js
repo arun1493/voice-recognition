@@ -1,9 +1,5 @@
 import InlineWorker from 'inline-worker';
 
-if (global === undefined) {
-    global = window;
-  }
-
 export class Recorder {
     config = {
         bufferLen: 4096,
@@ -247,7 +243,6 @@ export class Recorder {
     static
     forceDownload(blob, filename) {
         let url = (window.URL || window.webkitURL).createObjectURL(blob);
-        console.log(url)
         let link = window.document.createElement('a');
         link.href = url;
         link.download = filename || 'output.wav';

@@ -3,36 +3,16 @@
  * This is only a minimal backend to get started.
  */
 
-import express from 'express';
-import * as path from 'path';
 import { WebSocketServer } from 'ws';
-import transcribe from './speechToText';
-const cors = require("cors");
+import convertSpeechToText from './speechToText';
 
 const wss = new WebSocketServer({ port: 8080 });
 
-
 wss.on('connection', function connection(ws) {
-  ws.on('message', function message(data) {
-    // console.log('received: %s', data);
-    transcribe(data)
+  console.log('Connected')
+  ws.on('message', function message(payload) {
+    convertSpeechToText(payload).then((text) => {
+      ws.send(text);
+    })
   });
-  ws.send('something here');
 });
-
-
-const app = express();
-
-app.use(cors())
-
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to web!' });
-});
-
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
-});
-server.on('error', console.error);

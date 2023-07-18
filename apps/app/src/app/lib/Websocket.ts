@@ -6,7 +6,7 @@ client.onopen = () => {
 };
 
 client.onmessage = (message) => {
-  console.log(message);
+  console.log('Message received from server', message);
 };
 
 client.onerror = function () {

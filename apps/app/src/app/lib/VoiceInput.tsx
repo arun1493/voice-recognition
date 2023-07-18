@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import socketClient from './Websocket'
 import Recorder from './Recorder'
 
 const getMicroPhone = async () => {
@@ -15,46 +14,39 @@ const getMicroPhone = async () => {
     }
 }
 
-
 interface Props {
     onDataAvailable: (data: Blob) => void
 }
 
-var recorder;
+const VoiceRecorder: React.FC<Props> = ({ onDataAvailable }) => {
 
-const VoiceRecorder: React.FC<Props> = (props) => {
 
     const [stream, setStream] = useState<MediaStream | undefined>(undefined)
 
-    const requestDataId = useRef<ReturnType<typeof setInterval> | null>(null)
+    const recorder = useRef(undefined)
 
-    
+    const intrevalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+
     const startRecording = async () => {
         const stream = await getMicroPhone()
 
-        
         setStream(stream)
 
-        if(stream) {
+        if (stream) {
             const context = new AudioContext();
             const mediaStreamSource = context.createMediaStreamSource(stream);
-            recorder = new Recorder(mediaStreamSource);
-            recorder.record()
+            recorder.current = new Recorder(mediaStreamSource);
 
-            requestDataId.current = setInterval(function() {
+            recorder.current.record()
 
-                recorder.exportWAV(function(blob) {
-                    console.log('YAY', blob)
-                    recorder.clear();
-                    socketClient.send(blob);
-                    Recorder.forceDownload(blob, 'test.wav')
+            intrevalRef.current = setInterval(function () {
+                recorder.current.exportWAV(function (blob) {
+                    recorder.current.clear();
+                    onDataAvailable(blob)
                 });
-            }, 2000);
-            
-
-
+            }, 1500);
         }
-      
     }
 
     const toggleMic = () => {
@@ -66,10 +58,11 @@ const VoiceRecorder: React.FC<Props> = (props) => {
     }
 
     const stopMic = () => {
-        requestDataId.current && clearInterval(requestDataId.current)
-        // stream && stream.getTracks().forEach(track => track.stop());
+        intrevalRef.current && clearInterval(intrevalRef.current)
+        stream && stream.getTracks().forEach(track => track.stop());
         setStream(undefined);
-        recorder.stop()
+        recorder.current.stop()
+        recorder.current = undefined
     }
 
 
@@ -77,6 +70,7 @@ const VoiceRecorder: React.FC<Props> = (props) => {
         <button onClick={toggleMic}>
             {stream ? 'Stop' : 'Record'}
         </button>
+        {stream ? <span>Recording...</span> : null}
     </>
 
 }
