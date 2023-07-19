@@ -8,7 +8,7 @@ class TestProcessor extends AudioWorkletProcessor {
     this.frame = new Int16Array(quantumSize * this.quantaPerFrame)
   }
 
-  process(inputs, outputs, parameters) {
+  process(inputs) {
     const offset = quantumSize * this.quantaCount
     inputs[0][0].forEach((sample, idx) => this.frame[offset + idx] = Math.floor(sample * 0x7fff))
     this.quantaCount = this.quantaCount + 1

@@ -20,8 +20,8 @@ const captureAudio = (audioContext: AudioContext, stream: MediaStream, output: (
     const source: MediaStreamAudioSourceNode = audioContext.createMediaStreamSource(stream)
     const pcmWorker = new AudioWorkletNode(audioContext, 'pcm-worker', { outputChannelCount: [1] })
     source.connect(pcmWorker)
-    pcmWorker.port.onmessage = event =>  { 
-        output(event.data) 
+    pcmWorker.port.onmessage = event => {
+        output(event.data)
     }
     pcmWorker.port.start()
 }
@@ -41,7 +41,6 @@ const SpeechToText: React.FC = () => {
     const connect = () => {
         connection?.close()
         const conn = new WebSocket("ws://localhost:8080/")
-        conn.onmessage = console.log
         conn.onmessage = event => speechRecognized(event.data)
         setConnection(conn)
     }
@@ -73,10 +72,8 @@ const SpeechToText: React.FC = () => {
     return (
         <>
             <div>
-                <div>
-                    <button onClick={connect}>Start</button>
-                    <button onClick={disconnect}>Stop</button>
-                </div>
+                <button onClick={connect}>Start</button>
+                <button onClick={disconnect}>Stop</button>
             </div>
             <div>
                 {recognitionHistory.map((tx, idx) => <h2 key={idx}>{tx}</h2>)}
