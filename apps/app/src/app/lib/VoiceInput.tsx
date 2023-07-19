@@ -4,7 +4,12 @@ import Recorder from './Recorder'
 const getMicroPhone = async () => {
     try {
         const stream = await navigator.mediaDevices.getUserMedia({
-            audio: true,
+            audio: {
+                deviceId: "default",
+                sampleRate: 16000,
+                sampleSize: 16,
+                channelCount: 1
+              },
             video: false
         });
         return stream
@@ -36,7 +41,7 @@ const VoiceRecorder: React.FC<Props> = ({ onDataAvailable }) => {
         if (stream) {
             const context = new AudioContext({ sampleRate: 16000, latencyHint: 'interactive' });
             console.log(context)
-            const mediaStreamSource = context.createMediaStreamSource(stream);
+            const mediaStreamSource: MediaStreamAudioSourceNode = context.createMediaStreamSource(stream);
             recorder.current = new Recorder(mediaStreamSource, {bufferLen: 1024, sampleRate: 16000});
 
             recorder.current.record()

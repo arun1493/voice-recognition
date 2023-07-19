@@ -17,6 +17,8 @@
     "react-dom": "18.2.0",
     "recorder-js": "^1.0.7",
     "tslib": "^2.3.0",
+    "wav": "^1.0.2",
+    "web-audio-api": "^0.2.2",
     "ws": "^8.13.0"
   },
   "devDependencies": {

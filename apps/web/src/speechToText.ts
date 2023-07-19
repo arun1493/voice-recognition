@@ -6,10 +6,7 @@ const speech = require('@google-cloud/speech');
 // Creates a client
 const speechClient = new speech.SpeechClient();
 
-const convertSpeechToText = (audioBuffer) => {
-    const audio = {
-        content: audioBuffer.toString('base64'),
-    };
+const recognizeStream = () => {
 
     // The audio file's encoding, sample rate in hertz, and BCP-47 language code
     const config = {
@@ -17,34 +14,36 @@ const convertSpeechToText = (audioBuffer) => {
         languageCode: 'en-US',
         sampleRateHertz: 16000,
         audioChannelCount: 2,
-        
+
     };
 
     const request = {
-        audio,
         config,
+        interimResults: false, // If you want interim results, set this to true
     };
 
     console.log(config)
 
-    // Detects speech in the audio file
     return speechClient
-        .recognize(request)
-        .then((data) => {
-            const results = _.get(data[0], 'results', []);
-            const transcription = results
-                .map(result => result.alternatives[0].transcript)
-                .join('\n');
-            console.log('trans', transcription)
-            return transcription
+        .streamingRecognize(request)
+        .on('error', console.error)
+        .on('data', data => {
+            console.log(
+                `Transcription: ${data.results[0].alternatives[0].transcript}`
+            );
 
-        })
-        .catch(err => {
-            console.error('ERROR:', err);
-        });
+        return data.results[0].alternatives[0].transcript
+    });
 }
 
-export default convertSpeechToText
+const speechToText = (buffer) => {
+    buffer.stream()
+    .on('error', console.error)
+    .pipe(recognizeStream);
+}
+
+export default speechToText
+
 
 
 
