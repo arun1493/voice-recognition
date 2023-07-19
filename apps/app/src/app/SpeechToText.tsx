@@ -21,43 +21,36 @@ const captureAudio = (audioContext: AudioContext, stream: MediaStream, output: (
     const pcmWorker = new AudioWorkletNode(audioContext, 'pcm-worker', { outputChannelCount: [1] })
     source.connect(pcmWorker)
     pcmWorker.port.onmessage = event =>  { 
-        console.log(event.data)
         output(event.data) 
     }
     pcmWorker.port.start()
 }
 
-interface WordRecognized {
-    final: boolean,
-    text: string
-
-}
-
 const SpeechToText: React.FC = () => {
 
     const [connection, setConnection] = useState<WebSocket>()
-    const [currentRecognition, setCurrentRecognition] = useState<string>()
     const [recognitionHistory, setRecognitionHistory] = useState<string[]>([])
 
 
-    const speechRecognized = (data: WordRecognized) => {
-        if (data.final) {
-            setCurrentRecognition("...")
-            setRecognitionHistory(old => [data.text, ...old])
-        } else setCurrentRecognition(data.text + "...")
+    const speechRecognized = (data: string) => {
+        if (data) {
+            setRecognitionHistory(old => [...old, data])
+        }
     }
 
     const connect = () => {
         connection?.close()
         const conn = new WebSocket("ws://localhost:8080/")
         conn.onmessage = console.log
-        // conn.onmessage = event => speechRecognized(JSON.parse(event.data))
+        conn.onmessage = event => speechRecognized(event.data)
         setConnection(conn)
     }
 
     const disconnect = () => {
-        connection?.close()
-        setConnection(undefined)
+        setTimeout(() => {
+            connection?.close()
+            setConnection(undefined)
+        }, 3000)
     }
 
     useEffect(() => {
@@ -69,7 +62,6 @@ const SpeechToText: React.FC = () => {
                     return stream
                 })
 
-            console.log(stream)
             return () => {
                 stream.then(stream => stream.getTracks().forEach(track => track.stop()))
                 audioContext.close()
@@ -87,7 +79,6 @@ const SpeechToText: React.FC = () => {
                 </div>
             </div>
             <div>
-                <h2>{currentRecognition}</h2>
                 {recognitionHistory.map((tx, idx) => <h2 key={idx}>{tx}</h2>)}
             </div>
         </>
