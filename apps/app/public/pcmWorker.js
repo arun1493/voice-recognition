@@ -10,8 +10,12 @@ class TestProcessor extends AudioWorkletProcessor {
 
   process(inputs) {
     const offset = quantumSize * this.quantaCount
-    inputs[0][0].forEach((sample, idx) => this.frame[offset + idx] = Math.floor(sample * 0x7fff))
+    // process render quantum
+    inputs[0][0].forEach((sample, idx) => { 
+        this.frame[offset + idx] = Math.floor(sample * 0x7fff) 
+    })
     this.quantaCount = this.quantaCount + 1
+    // transmit the trancoded data after hitting 12 render quantums
     if (this.quantaCount === this.quantaPerFrame) {
       this.port.postMessage(this.frame)
       this.quantaCount = 0

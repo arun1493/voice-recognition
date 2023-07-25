@@ -26,22 +26,32 @@ const captureAudio = (audioContext: AudioContext, stream: MediaStream, output: (
     pcmWorker.port.start()
 }
 
+interface WordRecognized {
+    isFinal: boolean,
+    text: string
+}
+   
+
 const SpeechToText: React.FC = () => {
 
     const [connection, setConnection] = useState<WebSocket>()
+    const [currentRecognition, setCurrentRecognition] = useState<string>('')
     const [recognitionHistory, setRecognitionHistory] = useState<string[]>([])
 
 
-    const speechRecognized = (data: string) => {
-        if (data) {
-            setRecognitionHistory(old => [...old, data])
-        }
+    const speechRecognized = (data: WordRecognized) => {
+        if (data.isFinal) {
+            setCurrentRecognition("Speak something ...")
+            setRecognitionHistory(old => [data.text, ...old])
+          } else {
+            setCurrentRecognition(data.text + "...")
+          } 
     }
 
     const connect = () => {
         connection?.close()
         const conn = new WebSocket("ws://localhost:8080/")
-        conn.onmessage = event => speechRecognized(event.data)
+        conn.onmessage = event => speechRecognized(JSON.parse(event.data))
         setConnection(conn)
     }
 
@@ -76,6 +86,7 @@ const SpeechToText: React.FC = () => {
                 <button onClick={disconnect}>Stop</button>
             </div>
             <div>
+                <h2>{currentRecognition}</h2>
                 {recognitionHistory.map((tx, idx) => <h2 key={idx}>{tx}</h2>)}
             </div>
         </>

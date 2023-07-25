@@ -13,19 +13,23 @@ const config = {
 
 const request = {
     config,
-    interimResults: false, // If you want interim results, set this to true
+    interimResults: true, // If you want interim results, set this to true
 };
-
-
 
 const recognizeStream = (callBack) => speechClient
     .streamingRecognize(request)
     .on('error', (e) => { console.error('error here', e) })
     .on('data', data => {
+        const text = data.results[0].alternatives[0].transcript
+        const isFinal = data.results[0].isFinal
+        const transcription = {
+            text,
+            isFinal
+        }
         console.log(
-            `Transcription: ${data.results[0].alternatives[0].transcript}`
+            `Transcription: ${text}`
         );
-        callBack(data.results[0].alternatives[0].transcript)
+        callBack(transcription)
     });
 
 export default recognizeStream
